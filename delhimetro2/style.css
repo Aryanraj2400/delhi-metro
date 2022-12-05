@@ -1,0 +1,524 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#preloader{
+    background:url(pre.mp4);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.nobar{
+    position: fixed;
+    color: black;
+    background-color:#c8edff;
+    width: 100%;
+    margin: auto;
+    padding:15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nobar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nobar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+}
+.nobar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nobar ul li:hover::after{
+    width: 100%;
+}
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.ann {
+    position: fixed;
+    float: left;
+    background-color:#c8edff;
+    color: black;
+    width: 100%;
+    margin-top:none;
+    padding:15px 0;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right{
+    margin-top: 120px;
+    position: fixed;
+    padding-bottom: 10px ;
+    float: left;
+    background-color:#c8edff;
+    color: black;
+    width: 100%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    color: black;
+}
+.left ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.left ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.left ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.left ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+    color: #009688;
+}
+.right ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.right ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.right ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+    color: #009688;
+}
+.journey{
+    background-image: url(jourblue.jpg);
+    background-size:500px 400px;
+    background-repeat: repeat-x;
+    font-size: medium;
+    margin-top: 100px;
+    padding: 10px;
+    background-blend-mode: screen;
+    border: 1px solid black;
+    border-radius: 5px ;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    margin-left: 28%;
+}
+.station{
+    background-image:url(earthcolor.jpg);
+    background-size:550px 150px;
+    background-repeat:no-repeat;
+    font-size: medium;
+    padding: 8px;
+    background-blend-mode: screen;
+    border: 1px solid black;
+    border-radius: 5px ;
+    width: 510px;
+    text-align: center;
+    align-items: center;
+    margin-left: 28%;
+
+}
+/* #oth{
+    display: inline-block;
+    width: 1260px;
+    padding: 10px;
+    border: 4px solid black;
+    margin: 10px 0px; 
+
+}*/
+.ss{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(173, 66, 192);
+    color: azure;
+    border-radius: 5px;
+}
+.corona{
+    float: right;
+    position: relative;
+    width: 550px;
+}
+.map{
+    float: right;
+}
+.bu{
+    background-color: blue;
+    border: solid black 1px;
+    border-radius: 3px;
+}
+.metro{
+    padding: -40px;
+}
+.red{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: red;
+}
+.red:hover{
+    background-color: rgb(196, 66, 66);
+    color: aliceblue;
+    transform: translate(0,-10px);
+}
+
+.yellow{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: rgb(121, 121, 48);
+}
+.yellow:hover{
+    background-color: rgb(255, 255, 0);
+    color: aliceblue;
+    transform: translate(0,-10px);
+}
+
+.blue{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: blue;
+}
+.blue:hover{
+    background-color: blue;
+    color: aliceblue;
+    transform: translate(0,-10px);
+}
+
+.violet{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: violet;
+}
+.violet:hover{
+    background-color:violet;
+    color: aliceblue;
+    transform: translate(0,-10px);
+}
+
+.green{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: green;
+}
+.green:hover{
+    background-color: green;
+    color: white;
+    transform: translate(0,-10px);
+}
+.pink{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: pink;
+}
+.pink:hover{
+    background-color:pink;
+    color: white;
+    transform: translate(0,-10px);
+}
+.olivedrab{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color:olivedrab;
+
+}
+.olivedrab:hover{
+    background-color: olivedrab;
+    color: white;
+    transform: translate(0,-10px);
+}
+.grey{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: grey;
+}
+.grey:hover{
+    background-color: grey;
+    color: white;
+    transform: translate(0,-10px);
+}
+.orange{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color:orange;
+}
+.orange:hover{
+    background-color:orange;
+    color: white;
+    transform: translate(0,-10px);
+}
+.do{
+    background-color: white;
+    width: 110px;
+    height: 200px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: darkcyan;
+}
+.do:hover{
+    background-color: darkcyan;
+    color: white;
+    transform: translate(0,-10px);
+}
+.map{
+    height: 100px;
+    width:fit-content;
+    align-items: right;
+    background-position: 0ch;
+
+}
+.fc{
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: black;
+    margin: 10px 10px;
+    border-color: pink;
+}
+.fc:hover{
+    background-color: pink;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: pink;
+}
+.tic{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: black;
+    margin: 10px 10px;
+    border-color: lightblue;
+}
+.tic:hover{
+    background-color:lightblue;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: lightblue;
+}
+.tougu{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-left: 50px;
+    cursor: grab;
+    color: black;
+    margin: 10px 10px;
+    border-color: violet;
+}
+.tougu:hover{
+    background-color: violet;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: violet;
+}
+.mues{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color:black;
+    margin: 10px 10px;
+    border-color: orange;
+}
+.mues:hover{
+    background-color: orange;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: orange;
+}
+.landf{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color:black;
+    margin: 10px 10px;
+    border-color: lightgreen;
+}
+.landf:hover{
+    background-color:lightgreen;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: lightgreen;
+}
+.trad{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: grab;
+    color: black;
+    margin: 10px 10px;
+    border-color: lightcoral;
+}
+.trad:hover{
+    background-color: lightcoral;
+    color: white;
+    transform: translate(0,-10px);
+    border-color: lightcoral;
+}
+.trainbu ul li{
+    list-style: none;
+    display: inline-table;
+    margin: 0 5px;
+    position: relative;
+}
+.trainbu ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+}
+.youtube{
+    display:inline-block;
+    margin: 0 20px;
+    padding: 30px;  
+}
+.background{
+    background-image: url(newwall.jpg);
+    
+    background-size: cover;
+}
+.Footer{
+    background-color: rgb(183, 178, 178);
+    margin: 0;
+    padding: 0;
+}
+.disclaimer{
+    font-size: 10px;
+    background-color: rgb(210, 207, 207);
+    padding: 5px;
+}
+.bigmap{
+    background-image: url(earthcolor.jpg);
+    color: white;
+    width: 180px;
+    height: 50px;
+    margin-left: 530px;
+}
+.sh{
+    float: left;
+    background-color: azure;
+    position: fixed;
+    width:1500px;
+}
+.logo-img{
+    align-items: left;
+}
+
+
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arithmetic</h1>
+<h2>The + Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+let y = 2;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+<script>
+    let text1 = "Aryan";
+    let text2 = "Raj";
+    let text3 = text1 + " " +text2;
+    document.getElementById("demo").innerHTML = text3;
+</script>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Velar", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars[2];
+</script>
+
+<!-- <script>
+    const person = {
+        name : "Aryan",
+        age : 34,
+        Eye_color : "Black"
+    }
+    document.getElementById("demo").innerHTML = person.name + " is ";
+</script> -->
+
+<p>
+    It is a common practice to declare arrays with the const keyword.
+
+Learn more about const with arrays in the chapter: JS Array Const.
+</p>
+
+
+<p id="demo"></p>
+
+<script>
+    function myname(p1,p2){
+        return p1 * p2
+    }
+    document.getElementById("demo").innerHTML = myname(40863,385354);
+</script>
+<script>
+
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+</script>
+
+</body>
+</html>
